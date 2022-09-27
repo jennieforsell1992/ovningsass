@@ -1,0 +1,45 @@
+@use "mixins";
+
+.container {
+  @include mixins.div;
+  background-color: pink;
+  padding: 30px;
+}
+
+.container2 {
+  @include mixins.div;
+  background-color: blue;
+  display: flex;
+  float: right;
+  margin: 50px;
+}
+
+tr {
+  @include mixins.whatever;
+
+  &:nth-child(even) {
+    background-color: blueviolet;
+  }
+}
+
+li {
+  @include mixins.lister;
+  &:nth-child(even) {
+    color: red;
+  }
+}
+
+div {
+  @include mixins.divarna;
+}
+
+.fraganio {
+  @include mixins.punktnio;
+}
+
+.mini {
+  @include mixins.punktmini;
+  position: relative;
+  transform: translate(-25%, 50%);
+  margin: auto;
+}

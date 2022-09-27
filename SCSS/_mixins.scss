@@ -1,0 +1,41 @@
+@mixin div {
+  background-color: burlywood;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+@mixin whatever {
+  background-color: crimson;
+  border: 1px solid black;
+}
+
+@mixin lister {
+  list-style-type: none;
+}
+
+@mixin divarna {
+  height: 300px;
+  width: 100%;
+  background-color: chocolate;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin punktnio {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 500px;
+  background-color: darksalmon;
+  border: 2px solid black;
+}
+
+@mixin punktmini {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border: 1px solid black;
+}
